@@ -60,7 +60,7 @@ module.exports = function (app,passport) {
   	res.redirect('/');
   });
 
-  app.post('/auth/openid', passport.authenticate('openid'));
+  app.get('/auth/openid', passport.authenticate('openid'));
 
   app.get('/auth/openid/return',passport.authenticate('openid', 
       { successRedirect: '/viewBooking',

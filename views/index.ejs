@@ -19,12 +19,7 @@
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <form id="myform" action="/auth/openid" method="post">
-                    <div>
-                        <input type="text" name="openid_identifier" value='https://openid.nus.edu.sg' hidden/><br/>
-                        <a class="navbar-brand page-scroll" href="#" onclick="document.getElementById('myform').submit()">Login With Your NUSID</a>
-                    </div>
-                </form>
+                <a class="navbar-brand page-scroll" href="/auth/openid">Login With Your NUSID</a>
             </div>
             <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse"> </div>
         </div>
